@@ -1,4 +1,3 @@
-***
 ### Administrador para e-commerce
 Objetivo: por meio de um formulário cadastrar dados de um produto, ter uma página que mostre a relação de produtos cadastrados e que ao clicar em um produto qualquer desta lista o usuário seja redirecionado à uma página que exiba as informações do produto individualmente.
 
