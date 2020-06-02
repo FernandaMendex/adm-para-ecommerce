@@ -79,6 +79,52 @@
     </div>
 
 
+    <?php
+
+        $usuarios = carregaUsuario();
+        //echo "<pre>";
+        //print_r ($usuarios);
+        //echo "</pre>";
+        //die();
+
+    ?>
+
+
+    <div class="container">
+        <table class="table table-hover">
+        <thead>
+            <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Usuário</th>
+            <th scope="col">E-mail</th>
+            <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php 
+                foreach($usuarios as $usuario) :
+            ?>
+            <tr>
+            <th scope="row"><?= $usuario['id'] ?></th>
+            <td><?= $usuario['nome'] ?></td>
+            <td><?= $usuario['email'] ?></td>
+            <td>
+                <link class="btn"><a href="editUsuario.php?id=<?= $usuario['id'] ?>">Editar</a></link>
+            </td>
+            <td>
+                <link class="btn"><a href="excluiUsuario.php?id=<?= $usuario['id'] ?>">Excluir</a></link>
+            </td>
+            </tr>
+            <?php 
+                endforeach;
+            ?>
+        </tbody>
+        </table>
+    </div>
+
+
+
+
 
 
 

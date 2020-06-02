@@ -1,3 +1,16 @@
+<?php
+
+    //Includes
+    include('includes/funcoesUsuario.php');
+
+    if($_GET['id']){
+        $id = $_GET['id'];
+
+        deleteUsuario($id);
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,8 +30,8 @@
                 Sucesso!
             </div>
             <div class="card-body">
-                <h5 class="card-title">Produto editado com sucesso</h5>
-                <a href="indexProdutos.php" class="btn">Retornar para lista de produtos</a>
+                <h5 class="card-title">Usuário excluído com sucesso</h5>
+                <a href="createUsuario.php" class="btn">Retornar para lista de usuários</a>
             </div>
         </div>
     </div>

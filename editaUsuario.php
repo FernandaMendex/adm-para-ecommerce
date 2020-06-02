@@ -17,8 +17,8 @@
                 Sucesso!
             </div>
             <div class="card-body">
-                <h5 class="card-title">Produto editado com sucesso</h5>
-                <a href="indexProdutos.php" class="btn">Retornar para lista de produtos</a>
+                <h5 class="card-title">Usuário editado com sucesso</h5>
+                <a href="createUsuario.php" class="btn">Retornar para lista de usuários</a>
             </div>
         </div>
     </div>
