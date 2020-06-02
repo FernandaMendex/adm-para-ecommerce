@@ -23,13 +23,12 @@ A descrição é opcional. Salvar os produtos num arquivo produtos.json. Cada pr
 4. Fazer uma tela (editProduto.php) que permita a alterção das informações de um produto.
 
 5. Criar uma tela (createUsuario.php) de cadastro de usuários com campos nome, e-mail, senha e confirmação de senha. Guardar usuários num arquivo usuarios.json. Os campos devem ser validados seguindo os seguintes critérios:
-   1. O nome e o email são de preenchimentos obrigatórios;
-   1. A senha deve ter no mínimo 6 caracteres;   
-   1. A senha e a confirmação de senha devem ser iguais.
-   
+
+* O nome e o email são de preenchimento obrigatórios;
+* A senha deve ter no mínimo 6 caracteres;   
+* A senha e a confirmação de senha devem ser iguais.  
 * A senha de cada usuário deve ser armazenada criptografada.
 * A tela de cadastro dos usuários também deve conter uma lista com todos os usuários.
-* A senha de cada usuário deve ser armazenada criptografada.
 * Ao lado de cada usuário acrescente um botão que, quando clicado, deve remover o usuário.
 
 6. Cada item da lista de usuários (item 5) deve conter um link que direciona para uma tela que será capaz de alterar as informações de um usuário.
