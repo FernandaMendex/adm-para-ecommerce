@@ -3,16 +3,11 @@
     //Includes
     include('includes/funcoesProduto.php');
 
-    $produtos = carregaProduto();
+    if($_GET['id']){
+        $id = $_GET['id'];
 
-    $id = $_GET['id'];
-
-    $produto = idProduto($id);
-
-    //echo "<pre>";
-    //print_r($produto);
-    //echo "</pre>";
-    //die();    
+        deleteProduto($id);
+    }
 
 ?>
 
@@ -30,21 +25,18 @@
 <body>
 
     <div class="container">
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="<?= $produto['imagem'] ?>" alt="Imagem do produto">
-        <div class="card-body">
-            <h5 class="card-title"><?= $produto['nome'] ?></h5>
-            <p class="card-text">R$ <?= $produto['preco'] ?></p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><?= $produto['descricao'] ?></li>
-        </ul>
-        <div class="card-body">
-            <a href="editProduto.php?id=<?= $produto['id'] ?>" class="card-link">Editar</a>
-            <a href="excluiProduto.php?id=<?= $produto['id'] ?>" class="card-link">Excluir</a>
-        </div>
+        <div class="card text-center">
+            <div class="card-header">
+                Sucesso!
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Produto excluído com sucesso</h5>
+                <a href="indexProdutos.php" class="btn">Retornar para lista de produtos</a>
+            </div>
         </div>
     </div>
+
+  
 
 
 

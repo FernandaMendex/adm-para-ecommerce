@@ -46,6 +46,22 @@
         }   
     }
 
+    function deleteProduto($id){
+        $produtos = carregaProduto();
+
+        foreach ($produtos as $key => $produto) {
+            if ($produto['id'] == $id){
+                $posicao = $key;
+
+            }
+        }
+
+        unset($produtos[$posicao]);
+        
+        $stringjson = json_encode($produtos);
+        return file_put_contents("./data/produtos.json", $stringjson);
+    }
+
 
 
 
