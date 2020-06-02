@@ -35,6 +35,17 @@
         }
     }
 
+    function idProduto($id){
+        $produtos = carregaProduto();
+
+        foreach ($produtos as $produto){
+            if($produto['id'] == $id){
+                return $produto;
+            }
+            //return false;
+        }   
+    }
+
 
 
 
