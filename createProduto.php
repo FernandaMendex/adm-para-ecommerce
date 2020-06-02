@@ -61,7 +61,7 @@
                 </div>
                 <div class="form-group">
                     <label for="preco">Preço:</label>
-                    <input type="number" pattern="[0-9]+([,\.][0-9]+)?" class="form-control" id="preco" name="preco">
+                    <input type="number" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" class="form-control" id="preco" name="preco">
                     <small class="form-text text-muted">Ex: 999.99</small>
                 </div> 
 
