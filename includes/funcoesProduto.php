@@ -62,6 +62,23 @@
         return file_put_contents("./data/produtos.json", $stringjson);
     }
 
+    function editarProduto($id, $nome, $descricao, $preco, $imagem){
+        $produtos = carregaProduto();
+
+        foreach ($produtos as $key => $produto) {
+            if ($produto['id'] == $id){
+                $posicao = $key;
+            }
+        }
+
+        $produtoEditado = ['id'=>$id, 'nome'=>$nome, 'descricao'=>$descricao, 'preco'=>$preco, 'imagem'=>$imagem];
+
+        $produtos[$posicao] = $produtoEditado;
+
+        $stringjson = json_encode($produtos);
+        return file_put_contents("./data/produtos.json", $stringjson);
+    }
+
 
 
 

@@ -57,7 +57,7 @@
                 </div>
                 <div class="form-group">
                     <label for="descricao">Descrição:</label>
-                    <textarea class="form-control" id="descricao" name="descricao"></textarea>
+                    <input type="text" class="form-control" id="descricao" name="descricao">
                 </div>
                 <div class="form-group">
                     <label for="preco">Preço:</label>

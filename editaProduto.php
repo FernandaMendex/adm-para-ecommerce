@@ -1,15 +1,4 @@
-<?php
 
-    //Includes
-    include('includes/funcoesProduto.php');
-
-    if($_GET['id']){
-        $id = $_GET['id'];
-
-        deleteProduto($id);
-    }
-
-?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -30,7 +19,7 @@
                 Sucesso!
             </div>
             <div class="card-body">
-                <h5 class="card-title">Produto excluído com sucesso</h5>
+                <h5 class="card-title">Produto editado com sucesso</h5>
                 <a href="indexProdutos.php" class="btn">Retornar para lista de produtos</a>
             </div>
         </div>
