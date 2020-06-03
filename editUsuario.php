@@ -63,7 +63,7 @@
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="container border">
         <div class="col-12">
             <form action="" method="post" enctype="multipart/form-data">
                 <div class="form-group">

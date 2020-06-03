@@ -66,7 +66,7 @@
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="container border">
         <div class="col-12">
             <form action="" method="post" enctype="multipart/form-data">
                 <div class="form-group">
@@ -108,13 +108,16 @@
 
     ?>
 
-    <div class="container">
+    <div class="container border">
+        <h5 class="table-title">Usuários cadastrados</h5>
+        <br>
         <table class="table table-hover">
         <thead>
             <tr>
             <th scope="col">ID</th>
             <th scope="col">Usuário</th>
             <th scope="col">E-mail</th>
+            <th></th>
             <th></th>
             </tr>
         </thead>

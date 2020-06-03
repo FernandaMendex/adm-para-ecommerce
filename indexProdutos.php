@@ -45,7 +45,7 @@
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="container border">
         <table class="table table-hover">
         <thead>
             <tr>

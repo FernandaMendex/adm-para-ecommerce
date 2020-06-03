@@ -50,20 +50,22 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="<?= $produto['imagem'] ?>" alt="Imagem do produto">
-        <div class="card-body">
-            <h5 class="card-title"><?= $produto['nome'] ?></h5>
-            <p class="card-text">R$ <?= $produto['preco'] ?></p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><?= $produto['descricao'] ?></li>
-        </ul>
-        <div class="card-body">
-            <a href="editProduto.php?id=<?= $produto['id'] ?>" class="card-link">Editar</a>
-            <a href="excluiProduto.php?id=<?= $produto['id'] ?>" class="card-link">Excluir</a>
-        </div>
+    <div class="card mb-3" style="max-width: 840px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img class="card-img-top" src="<?= $produto['imagem'] ?>" alt="Imagem do produto">  
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title"><?= $produto['nome'] ?></h5>
+                    <p class="card-text"><?= $produto['descricao'] ?></p>
+                    <p class="card-text">R$ <?= $produto['preco'] ?></p>
+                    <p class="card-text">
+                    <a href="editProduto.php?id=<?= $produto['id'] ?>" class="card-link">Editar</a>
+                    <a href="excluiProduto.php?id=<?= $produto['id'] ?>" class="card-link">Excluir</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 

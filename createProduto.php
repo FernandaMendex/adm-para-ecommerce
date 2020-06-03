@@ -68,7 +68,7 @@
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="container border">
         <div class="col-12">
             <form action="" method="post" enctype="multipart/form-data">
                 <div class="form-group">
@@ -103,6 +103,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 <footer class="footer fixed-bottom">
-    © Girassóis de Van Gogh, artigos para arte 
+    © Girassóis de Van Gogh, artigos para arte
 </footer>
 </html>
