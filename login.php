@@ -43,33 +43,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Bem vindo!</title>
     <!--CSS-->
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/login.css">
     <!--BOOTSTRAP-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
-    <div class="login">
-    <div class="container col-6 border">
-        <div class="col-12">
-            <form action="" method="post" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="senha">Senha:
-                    <input type="password" class="form-control" id="senha" name="senha">
-                    <?= ($loginOk? '' : '<span> Usuário ou senha inválidos </span>') ?>
-                    </label>
-                </div>
-                <div>
-                    <button class="btn" type="submit">Entrar</button>
-                </div>
-            </form>
-        </div>
+
+    <div class="sidenav">
+        <img src="imagens/login.jpg" class="img-responsive" alt="">
+    </div>
+    <div class="main">
+        <div class="col-md-6 col-sm-12">
+            <div class="login-form">
+                <form action="" method="post" enctype="multipart/form-data>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha">
+                        <?= ($loginOk? '' : '<span> Usuário ou senha inválidos </span>') ?>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Entrar</button>
+                </form>
+            </div>
         </div>
     </div>
-
 
     <!--BOOTSTRAP-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
