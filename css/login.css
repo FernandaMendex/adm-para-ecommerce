@@ -2,8 +2,6 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-
-
 .main-head{
     height: 150px;
     background: #FFF;
@@ -12,13 +10,10 @@ body {
 
 .sidenav {
     height: 100%;
+    background-color: #0375b4;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
-
-.sidenav img {
-    height: 100%;
-    width: 100%;
-}
-
 
 .main {
     padding: 0px 10px;
@@ -68,4 +63,9 @@ body {
 
 .login-main-text h2{
     font-weight: 300;
+}
+
+.btn {
+    background-color: #0375b4;
+    color: #fff;
 }

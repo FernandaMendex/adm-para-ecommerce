@@ -50,26 +50,28 @@
 <body>
 
     <div class="sidenav">
-        <img src="imagens/login.jpg" class="img-responsive" alt="">
-    </div>
-    <div class="main">
-        <div class="col-md-6 col-sm-12">
+         <div class="login-main-text">
+            <h2>Administrador para<br>E-commerce</h2>
+            <p>Entre com e-mail e senha para controle de estoque e usuários</p>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
             <div class="login-form">
                 <form action="" method="post" enctype="multipart/form-data>
-                    <div class="form-group">
-                        <label>E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email">
-                    </div>
-                    <div class="form-group">
+                  <div class="form-group">
+                     <label>E-mail:</label>
+                     <input type="email" class="form-control" id="email" name="email">
+                  </div>
+                  <div class="form-group">
                         <label>Senha</label>
                         <input type="password" class="form-control" id="senha" name="senha">
                         <?= ($loginOk? '' : '<span> Usuário ou senha inválidos </span>') ?>
-                        </label>
-                    </div>
-                    <button type="submit" class="btn">Entrar</button>
-                </form>
+                  </div>
+                  <button type="submit" class="btn">Login</button>
+               </form>
             </div>
-        </div>
+         </div>
     </div>
 
     <!--BOOTSTRAP-->
