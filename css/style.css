@@ -18,11 +18,24 @@
 
 .card {
     margin-top: 50px;
-    
 }
 
 .card-body {
     text-align: center;
+}
+
+.btn {
+    background-color: #0375b4;
+    color: #fff;
+}
+
+.btn a {
+    color: #fff;
+}
+
+.btn a:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
 footer {
@@ -30,7 +43,7 @@ footer {
     display: flex;
     text-align: center;
     padding-top: 15px;
-    /*background-color: #eab63f;*/    
-
+    background-color: #0375b4;
+    color: #fff;    
 }
 

@@ -25,7 +25,7 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
-            <img src="imagens/logo.png" width="50" height="50" alt="Logo Girassóis de Van Gogh">
+            <img src="imagens/logoazul.png" width="50" height="50" alt="">
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -45,15 +45,11 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="card text-center">
-            <div class="card-header">
-                Sucesso!
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Usuário excluído com sucesso</h5>
-                <a href="createUsuario.php" class="btn">Retornar para lista de usuários</a>
-            </div>
+    <div class="container border col-6">
+        <div class="card-body">
+            <h5 class="card-title">Usuário excluído com sucesso</h5>
+            <br>
+            <button class="btn"><a href="createUsuario.php" class="btn">Retornar para lista de usuários</a></button>
         </div>
     </div>
 
@@ -63,6 +59,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 <footer class="footer fixed-bottom">
-    © Girassóis de Van Gogh, artigos para arte 
+    © Fernanda Mendes, administrador para e-commerce 
 </footer>
 </html>
