@@ -23,27 +23,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">
-            <img src="imagens/logoazul.png" width="50" height="50" alt="">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Produto excluído
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="createProduto.php">Cadastro de produtos</a>
-                <a class="dropdown-item" href="indexProdutos.php">Todos os produtos</a>
-                <a class="dropdown-item" href="createUsuario.php">Cadastro de usuários</a>
-                <a class="dropdown-item" href="createUsuario.php">Todos os usuários</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="logout.php">Logout</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+    <?php include 'includes/header.php' ?>
 
     <div class="container border col-6">
         <div class="card-body">
