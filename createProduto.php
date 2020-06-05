@@ -30,6 +30,8 @@
 
         if($nomeOk && $descricaoOk && $precoOk){
             addProduto($nome, $descricao, $preco, $imagem);
+
+            header('location: criaProduto.php');
         }
     }
 

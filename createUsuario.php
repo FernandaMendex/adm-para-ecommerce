@@ -28,6 +28,8 @@
         //Se formulário ok, salvo o usuário
         if($nomeOk && $emailOk && $senhaOk){
             addUsuario($nome, $email, $senha);
+
+            header('location: criaUsuario.php');
         }
     }
 
