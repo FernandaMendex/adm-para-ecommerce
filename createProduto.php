@@ -1,5 +1,15 @@
 <?php
 
+    //Iniciar a session
+    session_start();
+
+    //Testar se o usário tem a session
+    if(!$_SESSION){
+
+        //Redirecionando para a página de login, caso usuário não tenha
+        header('location: login.php');
+    }
+
     //Includes
     include('includes/funcoesProduto.php');
 
