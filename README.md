@@ -20,7 +20,7 @@ A descrição é opcional. Salvar os produtos num arquivo produtos.json. Cada pr
 
 3. Criar uma tela (showProduto.php) com as informações de um produto. Essa tela deve permitir a exclusão do produto.
 
-4. Fazer uma tela (editProduto.php) que permita a alterção das informações de um produto.
+4. Fazer uma tela (editProduto.php) que permita a alteração das informações de um produto.
 
 5. Criar uma tela (createUsuario.php) de cadastro de usuários com campos nome, e-mail, senha e confirmação de senha. Guardar usuários num arquivo usuarios.json. Os campos devem ser validados seguindo os seguintes critérios:
 
