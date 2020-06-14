@@ -83,9 +83,9 @@
 
                 <div class="form-group">
                     <label for="imagem">Imagem do produto:
-                    <input type="file" id="imagem" name="imagem" accept=".jpg, .jfif, .png" onchange="previewImagem()" require>
+                    <input type="file" id="imagem" name="imagem" accept=".jpg, .jfif, .png" onchange="previewImagem()" required>
                     <br><br>
-                    <img src="<?= $produto['imagem'] ?>" name="img-anterior" style="max-width: 200px;">
+                    <img src="<?= $produto['imagem'] ?>" id="img-anterior" name="img-anterior" style="max-width: 200px;">
                     </label>
                 </div>
                 <div>
