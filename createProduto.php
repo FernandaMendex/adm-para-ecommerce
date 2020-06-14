@@ -85,7 +85,7 @@
                 <div class="form-group">
                     <label for="imagem">Imagem do produto:
                     <input type="file" id="imagem" name="imagem" accept=".jpg, .jfif, .png" onchange="previewImagem()" required>
-                    <br>
+                    <br><br>
                     <img name="imagem" style="max-width: 200px;">
                     </label>
                 </div>
