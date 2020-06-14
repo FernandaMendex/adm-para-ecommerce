@@ -83,8 +83,11 @@
                 </div> 
 
                 <div class="form-group">
-                    <label for="imagem">Imagem do produto:</label>
-                    <input type="file" id="imagem" name="imagem" accept=".jpg, .jfif, .png" required> 
+                    <label for="imagem">Imagem do produto:
+                    <input type="file" id="imagem" name="imagem" accept=".jpg, .jfif, .png" onchange="previewImagem()" required>
+                    <br>
+                    <img name="imagem" style="max-width: 200px;">
+                    </label>
                 </div>
                 <div>
                     <button class="btn" type="submit">Enviar</button>
@@ -98,5 +101,22 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- Preview da imagem adicionada -->
+    <script>
+        function previewImagem() {
+            var imagem = document.querySelector('input[name="imagem"]').files[0];
+            var preview = document.querySelector('img[name="imagem"]');
+
+            var reader = new FileReader();
+
+            reader.onloadend = function() {
+                preview.src = reader.result;
+            }
+            if(imagem) {
+                reader.readAsDataURL(imagem);
+            }
+        }
+    </script>
 </body>
 </html>
